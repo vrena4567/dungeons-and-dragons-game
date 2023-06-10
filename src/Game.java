@@ -1,13 +1,21 @@
+import model.Character;
 import model.Monster;
+
+import java.util.Scanner;
 
 public class Game {
     public static void main(String[] args) {
         // Kérd meg a felhasználót, hogy adja meg a karaktere nevét és ezt olvasd be egy változóba!
         // (Használj Scannert!)
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Add meg a karakternevedet:");
+        String name = sc.nextLine();
 
         // Példányosíts egy Charactert (hívd meg a konstruktorát) ezzel a változóval!
+        Character jatekos = new Character(name);
 
         // Írd ki: Welcome, [játékos neve]!
+        System.out.println("Welcome, " + jatekos);
 
         // Készíts egy 3 hosszúságú tömböt Monster-ekből!
 
