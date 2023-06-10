@@ -27,6 +27,11 @@ public class Monster {
         this.name = name;
         this.health = health;
     }
+
+    public Monster() {
+
+    }
+
     public void attack(Character player) {
         // Írd ki: [szörny neve] attacks [játékos neve]!
         System.out.println(name + " attacks " + player);
