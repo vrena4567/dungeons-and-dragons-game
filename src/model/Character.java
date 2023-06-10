@@ -6,11 +6,38 @@ public class Character {
     private int health;
     private int level;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
     // Írj egy egy paraméteres kosntruktort ami beállítja a nevet és a health 100-ra, a levelt pedig 1-re állítja!
     public Character(String name){
         this.name = name;
         this.health =100;
         this.level = 1;
+    }
+    public Character(){
+
     }
 
     public void attack(Monster monster) {

@@ -18,9 +18,11 @@ public class Game {
         System.out.println("Welcome, " + jatekos);
 
         // Készíts egy 3 hosszúságú tömböt Monster-ekből!
-
+        Monster[] monsters = new Monster[3];
         // Töltsd fel szörnyekkel! Példa: monsters[0] = new Monster("Goblin", 50);
-
+        monsters[0] = new Monster("Goblin", 50);
+        monsters[1] = new Monster("Alejandro", 70);
+        monsters[2] = new Monster("Abrakadabra", 40);
         // Készíts egy gameOver nevű logikai változót, állítds az értékét false-ra!
 
         // Írj egy ciklust, ami addig tart amíg nincs vége a játéknek (amíg a gameOver nem true) ÉS
